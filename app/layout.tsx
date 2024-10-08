@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "GreatFrontEnd - @Davisnz Challenges 👨‍💻",
+  title: "GreatFrontEnd - @Davisnz Challenges  👨‍💻",
   description: "GreatFrontEnd @Davisnz",
 };
 
