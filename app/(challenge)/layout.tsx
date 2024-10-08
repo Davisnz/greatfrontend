@@ -2,20 +2,21 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GreatFrontEnd - Challenge #1",
-  description: "Create a Design Card",
+  title: "GreatFrontEnd - Challenges",
+  description: "Developed by @Davisnz",
   icons: {
-    icon: "/images/testimonialCard/favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
-export default function TestimonialLayout({
+export default function challengesLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <main className="testimonial-cardbg flex min-h-screen flex-col items-center justify-center">
+    <main className="">
+      {/* <main className="flex min-h-screen flex-col items-center justify-center"></main> DISABLED FOR AUTONOMY */}
       {children}
       <div className="credits" data-gfe-screenshot-exclude="true">
         A challenge by{" "}

@@ -41,10 +41,9 @@ html {
 body {
 }
 
-@layer base {
-  .testimonial-cardbg {
+@layer components {
+  .testimonials-card-bg {
     background: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
-    height: 100vh;
   }
 }
 

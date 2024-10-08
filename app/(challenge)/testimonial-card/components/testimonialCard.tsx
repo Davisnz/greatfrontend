@@ -3,7 +3,7 @@ import { testimonialCard } from "@/constants";
 
 const TestimonialCard = () => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row ">
       <div className="w-[340px] rounded-lg bg-white p-6 text-black shadow-md">
         {testimonialCard.map((testimonial) => (
           <div key={testimonial.name}>
