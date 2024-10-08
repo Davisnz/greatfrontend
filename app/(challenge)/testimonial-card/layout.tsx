@@ -1,4 +1,13 @@
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "GreatFrontEnd - Challenge #1",
+  description: "Create a Design Card",
+  icons: {
+    icon: "/images/testimonialCard/favicon.ico",
+  },
+};
 
 export default function TestimonialLayout({
   children,
