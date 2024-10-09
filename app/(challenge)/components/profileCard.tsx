@@ -24,7 +24,7 @@ const ProfileCard = () => {
       <button className="mb-6 mt-10 w-full rounded-[4px] bg-indigo-700 px-4 py-[10px] text-base font-medium leading-6 text-white">
         Contact Me
       </button>
-      <div className="flex justify-between gap-4">
+      <div className="flex justify-between gap-6 py-2">
         <Image
           src="/icons/github.svg"
           height={20}

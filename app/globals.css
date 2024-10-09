@@ -11,11 +11,12 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-noto-sans: "Noto Sans", sans-serif;
   }
 }
 
 html {
-  font-family: sans-serif;
+  font-family: var(--font-noto-sans);
 }
 * {
   box-sizing: border-box;
