@@ -1,9 +1,9 @@
 import React from "react";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans as NotoSans } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 
-const notoSans = Noto_Sans({
+const notoSans = NotoSans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-noto-sans",
