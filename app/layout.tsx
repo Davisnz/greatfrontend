@@ -12,6 +12,8 @@ const notoSans = NotoSans({
 export const metadata: Metadata = {
   title: "GreatFrontEnd - @Davisnz Challenges  👨‍💻",
   description: "GreatFrontEnd @Davisnz",
+  title: "GreatFrontEnd - @Davisnz Challenges  👨‍💻",
+  description: "GreatFrontEnd @Davisnz",
 };
 
 export default function RootLayout({
