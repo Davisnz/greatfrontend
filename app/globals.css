@@ -11,40 +11,39 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-noto-sans: "Noto Sans", sans-serif;
   }
 }
 
 html {
-  font-family:
-    "Noto Sans",
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  font-family: var(--font-noto-sans);
 }
-
 * {
   box-sizing: border-box;
 }
 
-body {
-}
+@layer components {
+  .gfe-gradient-bg {
+    background: var(
+      --Linear-Page,
+      linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%)
+    );
+  }
 
-@layer base {
-  .testimonial-cardbg {
-    background: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
-    height: 100vh;
+  .btn_primary_md {
+    @apply gap-1 rounded-[4px] bg-indigo-700 shadow-sm text-white px-[14px] py-[10px] text-sm leading-5;
+  }
+
+  .btn_primary_lg {
+    @apply flex items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[16px] py-[10px] text-base leading-4;
+  }
+
+  .btn_primary_xl {
+    @apply flex items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[20px] py-[12px] text-base leading-6 font-medium;
+  }
+
+  .btn_primary_2xl {
+    @apply flex justify-center items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[24px] py-[16px];
   }
 }
 
