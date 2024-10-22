@@ -1,45 +1,22 @@
 import React from "react";
-import styles from "./buttons.module.css";
-import Image from "next/image";
+import {
+  ButtonPrimaryMd,
+  ButtonPrimaryLg,
+  ButtonPrimaryXl,
+  ButtonPrimary2xl,
+} from "../components/buttons";
 
 const buttonsPage = () => {
   return (
-    <main className="flex h-screen">
-      <div className="flex shrink-0 flex-row items-center justify-center gap-4">
-        <button className={styles.btn_primary_md}>Button CTA</button>
+    <main className="flex h-screen items-center justify-center">
+      <div className="flex flex-row items-center justify-center gap-4">
+        <ButtonPrimaryMd>Button CTA</ButtonPrimaryMd>
 
-        <button className={styles.btn_primary_lg}>
-          <Image
-            src="/icons/star.svg"
-            alt="button icon"
-            width={20}
-            height={20}
-            className="p-[1.667px]"
-          />
-          Button CTA
-        </button>
+        <ButtonPrimaryLg icon="/icons/star.svg">Button CTA</ButtonPrimaryLg>
 
-        <button className={styles.btn_primary_xl}>
-          Button CTA
-          <Image
-            src="/icons/star.svg"
-            alt="button icon"
-            width={20}
-            height={20}
-            className="p-[1.667px]"
-          />
-        </button>
+        <ButtonPrimaryXl icon="/icons/star.svg">Button CTA</ButtonPrimaryXl>
 
-        <button className={styles.btn_primary_2xl}>
-          Button CTA
-          <Image
-            src="/icons/star.svg"
-            alt="button icon"
-            width={20}
-            height={20}
-            className="p-[1.667px]"
-          />
-        </button>
+        <ButtonPrimary2xl>Button CTA</ButtonPrimary2xl>
       </div>
     </main>
   );

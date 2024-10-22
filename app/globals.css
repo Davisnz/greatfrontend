@@ -29,6 +29,22 @@ html {
       linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%)
     );
   }
+
+  .btn_primary_md {
+    @apply gap-1 rounded-[4px] bg-indigo-700 shadow-sm text-white px-[14px] py-[10px] text-sm leading-5;
+  }
+
+  .btn_primary_lg {
+    @apply flex items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[16px] py-[10px] text-base leading-4;
+  }
+
+  .btn_primary_xl {
+    @apply flex items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[20px] py-[12px] text-base leading-6 font-medium;
+  }
+
+  .btn_primary_2xl {
+    @apply flex justify-center items-center gap-[6px] rounded-[4px] bg-indigo-700 shadow-sm text-white px-[24px] py-[16px];
+  }
 }
 
 @layer utilities {
