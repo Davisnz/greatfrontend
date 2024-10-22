@@ -1,13 +1,4 @@
 import React from "react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "GreatFrontEnd - Challenges",
-  description: "Developed by @Davisnz",
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
 
 export default function challengesLayout({
   children,
